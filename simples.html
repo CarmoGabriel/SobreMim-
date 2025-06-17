@@ -4,47 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/foto Perfil.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="Fstyle.css">
     <title>Document</title>
 </head>
 <body>
     
-    <header>
-        <h1>Projeto A3 </h1>
+    <header class="topoPagina">
+        <div class="elementsLeft">
+            <h1>Gabriel Eduardo </h1>
+
+            <div class= "conteiner" >
+               
+                <div class="tags">
+                    <span > Estudandte de ADS</span>
+                    <span > 3° periodo</span>
+                    <span > Recente fã de desenvolvimento web</span>
+                </div>
+                
+                <p>RA: 324138249</p>
+            
+            </div>
+
+        </div>
     </header>
 
     <main>
         
-        <section>
-            <h2>olá! Bem vindo a minha pagina de apresentação</h2>
-            <h3>Meu nome é Gabriel Eduardo do Carmo</h3>
-            
-            <p> Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 3º semestre da faculdade,
-              e estou atuando como estagiário de produto em uma empresa de tecnologia. Desde que tive meu primeiro contato 
-              com programação, desenvolvi uma verdadeira paixão por tecnologia e por tudo que ela é capaz de transformar.
-              </p>
+        <section class="PagApresentation">
 
-            <img src="../imgs/foto Perfil.jpg" alt="fotos do gabriel" style="width: 100px;">
+            <div class="textDescription" >
+                <h1>Olá! Bem vindo a minha pagina de apresentação</h1>
+                <h3>Meu nome é Gabriel Eduardo do Carmo</h3>
+                
+                <p> Sou estudante de Análise e Desenvolvimento de Sistemas, atualmente no 3º semestre da faculdade,
+                  e estou atuando como estagiário de produto em uma empresa de tecnologia. Desde que tive meu primeiro contato 
+                  com programação, desenvolvi uma verdadeira paixão por tecnologia e por tudo que ela é capaz de transformar.
+                </p>
+
+            </div>
+            
+
+            <div class="perfilImage">
+                <img src="imgs/foto pra trabalho 2024-09-24 à(s) 17.05.55_a5b68308.jpg" alt="fotos do gabriel"> 
+
+            </div>
+
         </section>
 
-        <section>
-            <h3>Informações: </h3>
-            <p>Nome: Gabriel Eduardo do Carmo</p>
-            <p>Registro o Aluno: 324138249 </p>
-            <p>Cursando: Analise e Desenvolvimento de Sistemas</p>
-            <p>Periodo: 3° </p>
-            <p>Endereço: Rua teste, teste 000</p>
-            <p>E-mail: teste@teste.com.br</p>
-            
+
+        <hr class="divisoria">
+
+
+        <!-- pagina de informações sobre mim -->
+        <section class="PagInfos" >
+
+            <div class="cardInfos">
+                <h3>Informações: </h3>
+                <div class="topoCard">
+                    <img src="imgs/foto pra trabalho 2024-09-24 à(s) 17.05.55_a5b68308.jpg" alt="">
+                    <div class="cabecalhoCard">
+                        <p><strong>Nome:</strong> Gabriel Eduardo do Carmo</p>
+                        <div>
+                            <p><strong>RA:</strong> 324138249 </p>
+                            <p><strong>Periodo:</strong> 3° </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adicionaisCard">
+                    <p><strong>Cursando:</strong>  Analise e Desenvolvimento de Sistemas</p>
+                    <p><strong>E-mail:</strong>  teste@teste.com.br</p>
+                    <p><strong>Endereço:</strong>  Rua teste, teste 000</p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h3>Unidades Curriculares já cursadas</h3>
-            <ul>
-                <li>Lógica de programação e soluções computacionais</li>
-                <li>Modelagem de software</li>
-                <li>Ambientes computacionais e conectividade</li>
-                <li>Sistemas computacionais e segurança</li>
-            </ul>
+
+        <hr class="divisoria">
+
+
+        <!-- pagina listando as UCS -->
+        <section class="PagUcs">
+
+            <div class="tituloPaginaUcs">
+                <h2>UC's já cursadas</h2>
+            
+            </div>
+
+            <div class="listaUcs">
+
+                <div class="infoUc">
+                    <img src="https://blog.cancaonova.com/tododemaria/files/2012/08/oleiro.jpg">
+                    <div class="descricaoUC">
+                        <h3>modelagme de software</h3>
+                        <p>19/02/2024 </p>
+                    </div>
+                </div>
+
+                <div class="infoUc">
+                     <img src=" " alt="imagem java">
+                    <div class="descricaoUC">
+                        <h3>Programação e soluções computacionais</h3>
+                        <p>19/02/2024 </p>
+                    </div>
+                </div>
+
+                <div class="infoUc">
+                    <img src=" " alt=" ">
+                    <div class="descricaoUC">
+                        <h3>segurança</h3>
+                        <p>01/07/2001 </p>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section>
@@ -64,7 +136,7 @@
     </main>
 
     <footer>
-        <p></p>
+        <p>rodapé</p>
     </footer>
 
 </body>

@@ -1,0 +1,339 @@
+
+
+*{
+    background-color: #D9D9D9;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -----------------[ HEADER ]------------------ */
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topoPagina, .elementsLeft,  .conteiner, .elementsLeft h1, .conteiner p{
+    background-color: #555;
+    
+}
+
+
+
+.elementsLeft{
+    display: flex;
+    justify-content: center;
+}
+.elementsLeft h1{
+    font-size: 40px;
+    text-align:center ;
+    margin-right: 1.9rem;
+}
+.elementsLeft .tags {
+    background-color: #555;
+}
+.elementsLeft p{
+    font-size: 14px;
+}
+
+
+.topoPagina {
+    background-color: #555;
+    color: white;
+    display: flex;
+    
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    font-size: 12px;
+    margin-top: 8px;
+}
+.conteiner span{
+    color: black;
+    background-color: #b8b5b5;
+    padding: 4px 8px;
+    border-radius: 4px; 
+}
+
+ 
+
+/* ---------------------------[ MAIN ]----------------------- */
+/*------------------[ SECTOION PAGAPRESENTAÇÃO ]---------------*/
+
+.PagApresentation{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+.PagApresentation .textDescription{
+    margin: 4rem 1rem 4rem 4rem ;
+}
+.PagApresentation h1{
+    font-size: 40px;
+}
+.PagApresentation p{
+    font-size: 20px;
+}
+.PagApresentation img{
+    width: 350px;
+    height: 450px;
+
+
+    border-radius: 20px;
+    margin-left: 3rem;
+    margin: 3rem 7rem ; 
+}
+
+.divisoria{
+    border: none;
+    height: 2px;
+    background-color: rgb(210, 202, 202);
+    margin: 40px 0;
+}
+
+
+
+/*------------------[ SECTION INFORMAÇÕES ]---------------*/
+
+.PagInfos{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.cardInfos{
+    width: 50rem;
+    background-color: #b5b5b5;
+    border-radius: 30px;
+    padding: 2rem;
+    margin: 2rem;
+
+    font-size: 2rem;
+
+}
+.cardInfos img{
+    margin: 0;
+    clip-path: circle(50%);
+    
+    width: 120px;
+    height: 120px;
+}
+.cardInfos h3, .cardInfos p{
+    background-color: transparent;
+    margin: 0.7rem 0 0.1rem 1rem;
+
+}
+.cardInfos .topoCard{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin: 0.7rem 0 0 1rem;
+
+}
+.cardInfos strong{
+    background-color: transparent;
+    color: #424242;
+    
+}
+.cardInfos .topoCard{
+    display: flex;
+    align-items: self-start;
+
+}
+
+
+
+.cabecalhoCard{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.cabecalhoCard div{
+    background-color: transparent;
+    display: flex;
+
+}
+
+
+.adicionaisCard{
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+
+
+/*------------------[ PAGINA DE UC's ]---------------*/
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.pagUcs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    /* padding: 2rem; */
+
+} 
+
+
+
+.tituloPaginaUcs{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem 0.1rem 2rem;
+
+}
+.tituloPaginaUcs h2  {
+    font-size: 45px; 
+    background-color: transparent; 
+
+}
+.tituloPaginaUcs button {
+    margin-right: 4rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: transparent;
+    background-color: #a4abae;
+    color: aliceblue;
+    font-size: 20px;
+
+    transition: background-color 0.3s ease;    
+}
+.tituloPaginaUcs strong{
+    background-color: transparent;
+}
+.tituloPaginaUcs button:hover{
+    background-color: #555;
+
+}
+
+
+
+.listaUcs{
+    display: flex;
+    justify-content: center;
+    
+    background-color: #b5b5b5;
+    margin: 2rem 0 2rem 0;
+  
+    
+}
+
+
+
+.infoUc{
+    width: 17rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    background-color: #f0f8ff;
+    margin: 2rem 2rem 2rem 2rem;
+    border-radius: 5px;
+    padding: 0; 
+
+    transition: 0.3s ease; /* esse*/
+
+}
+.infoUc:hover{ 
+    transform: scale(1.13); 
+    z-index: 1;
+    cursor: pointer;
+    
+}
+.infoUc .descricaoUC{
+    text-align: center;
+    margin: 0.5rem 1rem;
+
+}
+.infoUc, .infoUc h3 , .infoUc p{
+    background-color: #f0f8ff;
+
+}
+ img{
+    width: 17rem;  
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    margin: 0; 
+    object-fit: cover;
+
+}
+
+
+
+.formUc {
+    width: 17rem;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color:#f0f8ff;
+    margin: 2rem 2rem 2rem 2rem;
+    border-radius: 5px;
+    
+} 
+.formUc form{
+    width: 17rem;
+    height: 10rem;
+    background-color: #f0f8ff;
+    margin-top: 2rem;
+    padding: 1rem;
+
+}
+.formUc fieldset{
+    background-color: #f0f8ff;
+    border: 0px ;
+    display: flex;
+    
+}
+.formUc label {
+    background-color: #f0f8ff;
+    margin: 10px 0 10px 0 ; 
+    font-size: 25px;
+
+}
+.formUc input, input[type="data"]{ 
+    font-size: 18px;
+    border: 2px;
+    border-bottom: 2px solid #555;
+    background-color: #f0f8ff;
+ 
+}
+.formUc input::placeholder{
+    color: #bdbfc2;
+}
+.formUc button{
+    background-color: #a4abae;
+    color: aliceblue;
+    border: 0px ;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem;
+    
+    transition: background-color 0.3s ease;
+}
+.formUc button:hover{
+    background-color: #555;
+    cursor: pointer;
+}
