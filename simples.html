@@ -30,6 +30,7 @@
 
     <main>
         
+        <!-- pagina de apresentação -->
         <section class="PagApresentation">
 
             <div class="textDescription" >
@@ -45,7 +46,17 @@
             
 
             <div class="perfilImage">
-                <img src="imgs/foto pra trabalho 2024-09-24 à(s) 17.05.55_a5b68308.jpg" alt="fotos do gabriel"> 
+
+                <div class="carrosselFotos">
+                    <img class="foto ativa" src="imgs/foto pra trabalho 2024-09-24 à(s) 17.05.55_a5b68308.jpg" alt="foto_perfil 1">
+                    <img class="foto" src="https://malucoporjesus.wordpress.com/files/2010/01/jesus-legal.jpg" alt="foto_perfil 2">
+                    <img class="foto" src="https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/241f197aa06dab4ef5bce4d3390e47667a568ea6aa0b072446f88066aa1dfa8b_1.jpg" alt="foto_perfil 3">
+                </div>
+
+                <div>
+                    <button onclick="alterarImagem(-1)">bak</button>
+                    <button onclick="alterarImagem(1)">next</button>
+                </div>
 
             </div>
 
@@ -87,21 +98,21 @@
 
             <div class="tituloPaginaUcs">
                 <h2>UC's já cursadas</h2>
-            
+                <button onclick="FormAdd()"> <strong>Criar nova UC</strong> </button>
             </div>
 
             <div class="listaUcs">
 
                 <div class="infoUc">
-                    <img src="https://blog.cancaonova.com/tododemaria/files/2012/08/oleiro.jpg">
+                    <img src="https://www.gliffy.com/sites/default/files/inline-images/image-blog-uml-2-5-diagram-types_0.png">
                     <div class="descricaoUC">
-                        <h3>modelagme de software</h3>
+                        <h3>Modelagme de software</h3>
                         <p>19/02/2024 </p>
                     </div>
                 </div>
 
                 <div class="infoUc">
-                     <img src=" " alt="imagem java">
+                     <img src="https://img-c.udemycdn.com/course/750x422/2100666_b89f_5.jpg" alt="imagem java">
                     <div class="descricaoUC">
                         <h3>Programação e soluções computacionais</h3>
                         <p>19/02/2024 </p>
@@ -109,12 +120,21 @@
                 </div>
 
                 <div class="infoUc">
-                    <img src=" " alt=" ">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230420093202/Internet-image-(2).webp" alt=" ">
                     <div class="descricaoUC">
-                        <h3>segurança</h3>
+                        <h3>Ambientes computacionais e conectividade</h3>
                         <p>01/07/2001 </p>
                     </div>
                 </div>
+
+                <div class="infoUc">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQFANWgig2mBaQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1686577478756?e=2147483647&v=beta&t=MwwUizwgS3vlAAXwrBynHXjQ-D7rx_VlPXjigIX8oM8" alt=" ">
+                    <div class="descricaoUC">
+                        <h3>Sisemas computacionais e segurança</h3>
+                        <p>01/07/2001 </p>
+                    </div>
+                </div>
+
             </div>
 
         </section>
@@ -139,5 +159,7 @@
         <p>rodapé</p>
     </footer>
 
+
+    <script src="logica.js"></script>
 </body>
 </html>
