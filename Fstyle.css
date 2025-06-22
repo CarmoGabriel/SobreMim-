@@ -1,10 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
 *{
-    background-color: #D9D9D9;
+    background-color: #efede8;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "cabin", sans-serif;
 }
 
 /* -----------------[ HEADER ]------------------ */
@@ -15,9 +16,20 @@ header{
 }
 
 
-.topoPagina, .elementsLeft,  .conteiner, .elementsLeft h1, .conteiner p{
-    background-color: #555;
+.topoPagina {
     
+    color: white;
+    display: flex;
+    
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}    
+.topoPagina, .elementsLeft, .topoPagina h1{
+    background-color: #459a64;
+    
+}
+.topoPagina{
+    border: 0 solid transparent;
 }
 
 
@@ -25,6 +37,7 @@ header{
 .elementsLeft{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .elementsLeft h1{
     font-size: 40px;
@@ -32,26 +45,20 @@ header{
     margin-right: 1.9rem;
 }
 .elementsLeft .tags {
-    background-color: #555;
+    background-color: transparent;
+}
+.tags a {
+    background-color: transparent;
+    color: #000000;
 }
 .elementsLeft p{
     font-size: 14px;
 }
 
 
-.topoPagina {
-    background-color: #555;
-    color: white;
-    display: flex;
-    
-    padding: 20px 40px;
-    flex-wrap: wrap;
-    
-}
-
-
 
 .conteiner{
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -61,10 +68,19 @@ header{
     margin-top: 8px;
 }
 .conteiner span{
-    color: black;
     background-color: #b8b5b5;
-    padding: 4px 8px;
+    padding: 4px 18px;
     border-radius: 4px; 
+    margin: 5px;
+    font-size: 16px;
+
+}
+.conteiner span img{
+    position: relative;
+    top: 5px;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
 }
 
  
@@ -78,13 +94,25 @@ header{
     margin: 0.7rem;
 }
 .PagApresentation .textDescription{
-    margin: 4rem 1rem 4rem 4rem ;
+    height: auto;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 3rem 0rem 4rem 4rem ;
+    background-color: #bae9d0;
 }
-.PagApresentation h1{
+.textDescription h1{
     font-size: 40px;
+    background-color: transparent;
 }
-.PagApresentation p{
+.textDescription h3{
+    font-size: 1.3rem;
+    margin: 1rem 0 0 1rem ;
+    background-color: transparent;
+}
+.textDescription p{
     font-size: 20px;
+    background-color: transparent;
+    margin: 0 9rem 0 1rem;
 }
 
 
@@ -109,6 +137,22 @@ header{
     background-color: #7c7c7c;
     cursor: pointer;
 }
+
+
+
+.carrosselFotos .foto{
+    display: none;
+    width: 300px;
+    height: 420px;
+
+    border-radius: 20px;
+    margin-left: 3rem;
+    margin: 3rem 5rem ; 
+}
+.foto.ativa{
+    display: block;
+}
+
 
 
 .overOculto{
@@ -152,7 +196,7 @@ header{
 .conteudoOver .fotoOver{
     border-radius: 20px;
     display: none;
-    width: 400px;
+    width: 415px;
     height: 580px;
 }
 .fotoOver.ativa{
@@ -175,18 +219,6 @@ header{
 }
 
 
-.carrosselFotos .foto{
-    display: none;
-    width: 300px;
-    height: 420px;
-
-    border-radius: 20px;
-    margin-left: 3rem;
-    margin: 3rem 7rem ; 
-}
-.foto.ativa{
-    display: block;
-}
 
 
 
@@ -211,7 +243,7 @@ header{
 
 .cardInfos{
     width: 50rem;
-    background-color: #b5b5b5;
+    background-color: #63ba88;
     border-radius: 30px;
     padding: 2rem;
     margin: 2rem;
@@ -273,18 +305,11 @@ header{
 
 /*------------------[ SECTION UC's ]---------------*/
 
-fieldset{
-    display: flex;
-    flex-direction: column;
-}
-
-
-
 .pagUcs {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    /* padding: 2rem; */
+    padding: 3rem; 
 
 } 
 
@@ -306,8 +331,8 @@ fieldset{
     padding: 1rem;
     border-radius: 5px;
     border: transparent;
-    background-color: #a4abae;
-    color: aliceblue;
+    background-color: #459a64;
+    color: #aaefca;
     font-size: 20px;
 
     transition: background-color 0.3s ease;    
@@ -324,11 +349,19 @@ fieldset{
 
 .listaUcs{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     
-    background-color: #b5b5b5;
-    margin: 2rem 0 2rem 0;   
+    background-color: #63ba88;
+    margin: 2rem 0 2rem 0;  
+    padding: 1rem 1rem;
+    
+    overflow-x: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory; 
+
 }
+
 
 
 
@@ -339,7 +372,6 @@ fieldset{
     flex-direction: column;
     align-items: center; 
 
-    background-color: #f0f8ff;
     margin: 2rem 2rem 2rem 2rem;
     border-radius: 5px;
     padding: 0; 
@@ -347,8 +379,7 @@ fieldset{
     transition: 0.3s ease; /* esse*/
 }
 .infoUc:hover{ 
-    transform: scale(1.13); 
-    z-index: 1;
+    transform: scale(1.13);  
     cursor: pointer;   
 }
 .infoUc .descricaoUC{
@@ -361,6 +392,7 @@ fieldset{
     background-color: #f0f8ff;
 }
  .infoUc img{
+    background-color: white;
     width: 17rem;  
     height: 200px;
     border-radius: 5px 5px 0 0;
@@ -420,7 +452,7 @@ fieldset{
     color: #bdbfc2;
 }
 .formUc button{
-    background-color: #a4abae;
+    background-color: #8ccea9;
     color: aliceblue;
     border: 0px ;
     border-radius: 5px;
@@ -435,11 +467,52 @@ fieldset{
 }
 
 
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /*-------------[ SECTION de informaçoes pessoais ]---------------*/
 
-.pagInfosPessuais p{
+.pagInfosPessuais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pagInfosPessuais h3{
+    font-size: 45px; 
+    width: 100%;
+    margin-left: 3rem;
+}
+
+.descricaoPessoal{
+    background-color: #8ccea9;
+    border-radius: 20px;
+    width: 70rem;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem 8rem 2rem 5rem;
     
+}
+.descricaoPessoal p{
+    font-size: 20px;
+    background-color: transparent;
+    margin-bottom: 1rem;
+}
+.descricaoPessoal button{
+    
+    width: 9rem;
+    height: 2rem;
+
+}
+
+.campoEditDesc{
+    margin: 0 3rem 0 1rem;
+    width: 65rem;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -455,12 +528,13 @@ fieldset{
 }
 .Pagvalidacoes h2{
     font-size: 45px; 
+    margin-left: 2rem;
 }
 
 
 
 .BlocoCPF {
-    background-color: #a4abae;
+    background-color: #8ccea9;
     border-radius: 10px;
     margin: 1rem;
     width: 40rem;
@@ -473,7 +547,7 @@ fieldset{
 }
 .BlocoCPF p{
     font-size: 25px;
-    background-color: #a4abae;
+    background-color: transparent;
     margin: 1rem;
 }
 .BlocoCPF input{
@@ -504,7 +578,7 @@ fieldset{
 
 
 .BlocoEmail {
-    background-color: #a4abae;
+    background-color: #8ccea9;
     border-radius: 10px;
     margin: 1rem;
     width: 40rem;
@@ -517,7 +591,7 @@ fieldset{
 }
 .BlocoEmail p{
     font-size: 25px;
-    background-color: #a4abae;
+    background-color: transparent;
     margin: 1rem;
 }
 .BlocoEmail input{
@@ -559,8 +633,26 @@ fieldset{
     align-items: center;
 }
 .overlayMsg .conteudo{
-    background-color: #b8b5b5;
+    background-color: #e8ce94;
+    border-radius: 10px;
     padding: 3rem;
     text-align: center;
+}
+.conteudo p{
+    background-color: transparent;
+    font-size: 24px;
+}
+.conteudo button{
+    border-radius: 5px ;
+    border-color: transparent;
+    margin-top: 1rem;
+    width: 5rem;
+    font-size: 18px;
+
+    transition: background-color 0.3s ease;
+}
+.conteudo button:hover{
+    background-color: #424242;
+    color: #e6e6e6;
 }
 

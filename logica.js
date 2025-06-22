@@ -11,13 +11,9 @@ function alterarImagem(indice, identify){ /* o identify é uma string em aspas s
      
 };
 
-/* <div id="carrosselOver" class="overlayImg" >  container de todo o caarrossel*/
+
 const overlay = document.getElementById('carrosselOver'); 
-
-/* <img class="imgOrigem foto" src="" alt="">  imagens que são exibidas na pagina*/
 const imgPerfil= document.querySelectorAll('.imgOrigem');
-
-/* <img class="imgOver foto" src="" alt="">  imagens que são exibidas na pagina*/
 const imgOver= document.querySelectorAll('.imgOver');
 
 imgPerfil.forEach(img => {
@@ -138,8 +134,9 @@ function editarDecricao(){
     butonEdit.style.display= 'none';
 
     const input= document.createElement('textarea');
+    input.classList.add('campoEditDesc')
     input.value= texto;
-    input.rows= texto.split('\n').length;
+    input.rows= 8;
 
     const save= document.createElement('button');
     save.textContent= 'salvar';
@@ -151,6 +148,7 @@ function editarDecricao(){
         save.remove();
     });
 
+    
     desc.style.display= 'none';
     desc.parentElement.insertBefore(input, desc);
     desc.parentElement.insertBefore(save, desc);
