@@ -132,7 +132,7 @@ function editarDecricao(){
     const butonEdit= document.getElementById('edit')
 
     butonEdit.style.display= 'none';
-
+    
     const input= document.createElement('textarea');
     input.classList.add('campoEditDesc')
     input.value= texto;
@@ -140,12 +140,13 @@ function editarDecricao(){
 
     const save= document.createElement('button');
     save.textContent= 'salvar';
-
+    
     save.addEventListener('click', () =>{
         desc.textContent = input.value; 
         desc.style.display= 'block';
         input.remove();
         save.remove();
+        butonEdit.style.display= 'block';
     });
 
     
@@ -228,8 +229,8 @@ blocoEmail.addEventListener('submit', () =>{
             <div class="conteudo">
                 <p>O valor fornecido(${email}) <br>
                  não se enquadra como um E-MAIL!!! </p>
-                <button id="close">ok</button>
-            </div> `
+                 <button id="close">ok</button>
+                 </div> `
         overlay.style.display='flex'; 
 
         inputEmail.placeholder= 'Digite um novo email';
@@ -257,8 +258,3 @@ blocoEmail.addEventListener('submit', () =>{
     })
 
 })
-
-
-/* bloco que cria o overlay de confirmação*/
-
-
